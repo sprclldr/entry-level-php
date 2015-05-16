@@ -40,7 +40,7 @@ $array_without_keys = array(
 				// Printing variables to the page 
 				?>
 				<p>Welcome to WordCamp Nashville #<?php echo $number_of_wordcamps; ?></p>
-				<p>Lunch was <?php echo $test_array['lunch']; ?>.</p>
+				<p>Lunch was <?php echo $array_with_keys['lunch']; ?>.</p>
 				
 				<?php 
 				// Simple if statement
