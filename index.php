@@ -45,12 +45,19 @@ $array_without_keys = array(
 				<?php 
 				// Simple if statement
 				if ( $wordcamp_is_awesome ) { 
-					$awesomeness = $test_array['sessions'];
+					$awesomeness = $array_with_keys['sessions'];
 				} else {
 					$awesomeness = "Got ya! It's still awesome";
 				}
 				?>
 				<h3>WordCamp is ... <?php echo $awesomeness; ?>!</h3>
+				
+				<?php 
+				// You can’t “print” an array without a loop, but you can print single data points.
+				?>
+				<?php print_r ( $array_without_keys ); ?>
+				<?php echo $array_without_keys[ 1 ]; ?>
+
 				
 				<?php 
 				// Evaluate using a comparison operator
