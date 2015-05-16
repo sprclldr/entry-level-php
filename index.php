@@ -56,6 +56,7 @@ $array_without_keys = array(
 				// You can’t “print” an array without a loop, but you can print single data points.
 				?>
 				<?php print_r ( $array_without_keys ); ?>
+				<br/>
 				<?php echo $array_without_keys[ 1 ]; ?>
 
 				
