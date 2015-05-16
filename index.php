@@ -40,12 +40,12 @@ $array_without_keys = array(
 				// Printing variables to the page 
 				?>
 				<p>Welcome to WordCamp Nashville #<?php echo $number_of_wordcamps; ?></p>
-				<p>Lunch was <?php echo $array_with_keys['lunch']; ?>.</p>
+				<p>Lunch was <?php echo $array_with_keys[ 'lunch' ]; ?>.</p>
 				
 				<?php 
 				// Simple if statement
 				if ( $wordcamp_is_awesome ) { 
-					$awesomeness = $array_with_keys['sessions'];
+					$awesomeness = $array_with_keys[ 'sessions' ];
 				} else {
 					$awesomeness = "Got ya! It's still awesome";
 				}
@@ -55,13 +55,16 @@ $array_without_keys = array(
 				<?php 
 				// You can’t “print” an array without a loop, but you can print single data points.
 				?>
-				<?php print_r ( $array_without_keys ); ?>
-				<br/>
-				<?php echo $array_without_keys[ 1 ]; ?>
+				<h4>Printing Arrays</h4>
+				<p><?php print_r ( $array_without_keys ); ?></p>
+				<p><?php echo $array_without_keys[ 1 ]; ?></p>
 
 				
 				<?php 
 				// Evaluate using a comparison operator
+				?>
+				<h4>Evaluating a variable by comparison</h4>
+				<?php
 				if ( $number_of_wordcamps == 4 ) { 
 					echo '<p>This fourth WordCamp is the best.</p>';
 				}
@@ -69,6 +72,9 @@ $array_without_keys = array(
 				
 				<?php 
 				// Evaluate using a logical operator
+				?>
+				<h4>Evaluating a variable by logical operator</h4>
+				<?php
 				if ( $number_of_wordcamps == 4 && $wordcamp_is_awesome ) { 
 					echo "<p>Now you're getting the hang of it.</p>";
 				}
@@ -77,7 +83,10 @@ $array_without_keys = array(
 				<?php the_content(); ?>
 				
 			</main>
-			<footer><?php echo $warm_greetings; ?></footer>
+			<footer>
+				<h4>Thank you!</h4>
+				<?php echo $warm_greetings; ?>
+			</footer>
 		<?php endwhile; endif;?>
 	</body>
 </html>
