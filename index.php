@@ -15,7 +15,7 @@ $array_with_keys = array(
 	'after_party' => "Can't wait!"
 );
 
-// An array without key's gets assigned numerical keys
+// An array without key's gets assigned numerical keys automatically
 $array_without_keys = array(
 	'yummy', // 0
 	'awesome', // 1
